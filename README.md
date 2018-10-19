@@ -54,3 +54,51 @@ Host someinternalhost
 bastion_IP = 35.233.71.130
 someinternalhost_IP = 10.132.0.3
 ```
+
+
+
+## Homework #4
+
+### Создание vm с использованием startup script
+```
+gcloud compute instances create reddit-app\
+  --boot-disk-size=10GB\
+  --image-family ubuntu-1604-lts\
+  --image-project=ubuntu-os-cloud\
+  --machine-type=g1-small\
+  --tags puma-server\
+  --restart-on-failure\
+  --metadata-from-file startup-script=/app/otus/bakaevmm_infra/startup.sh 
+```
+
+### Создание vm с использованием startup script url
+#### Создаём GS
+```
+gsutil mb gs://otus-bakaevmm
+gsutil cp /app/otus/bakaevmm_infra/startup.sh gs://otus-bakaevmm
+```
+#### Создаём vm
+```
+gcloud compute instances create reddit-app\
+  --boot-disk-size=10GB\
+  --image-family ubuntu-1604-lts\
+  --image-project=ubuntu-os-cloud\
+  --machine-type=g1-small\
+  --tags puma-server\
+  --restart-on-failure\
+  --scopes storage-ro\
+  --metadata startup-script-url=gs://otus-bakaevmm/startup.sh
+```
+
+### Создаём правило firewall
+```
+gcloud compute firewall-rules create default-puma-server\
+  --allow tcp:9292\
+  --source-ranges 0.0.0.0/0\
+  --target-tags puma-server
+```
+### Данные для проверки
+```
+testapp_IP = 35.205.37.42
+testapp_port = 9292
+```
