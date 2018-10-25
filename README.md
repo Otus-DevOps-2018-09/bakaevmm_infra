@@ -102,3 +102,14 @@ gcloud compute firewall-rules create default-puma-server\
 testapp_IP = 35.205.37.42
 testapp_port = 9292
 ```
+
+
+
+## Homework #5
+
+* Установлен packer
+* Создан шаблон описывающий создание образа ubuntu 16
+* Доработан шаблон(в шаблон упакованы все зависимости приложения reddit-app + приложение reddit-app + создан systemd файл для старта puma в качестве сервиса)
+```
+packer validate -var-file=variables.json  immutable.json
+```
