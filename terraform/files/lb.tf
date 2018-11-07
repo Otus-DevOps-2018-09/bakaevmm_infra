@@ -6,17 +6,17 @@ resource "google_compute_forwarding_rule" "default" {
 }
 
 resource "google_compute_target_pool" "default" {
-  name = "reddit-app-pool"
-  instances = ["${google_compute_instance.app.*.self_link}"]
+  name          = "reddit-app-pool"
+  instances     = ["${google_compute_instance.app.*.self_link}"]
   health_checks = ["${google_compute_http_health_check.default.name}"]
 }
 
 resource "google_compute_http_health_check" "default" {
-  name               = "reddit-app-hc"
-  request_path       = "/"
-  port               = 9292
-  check_interval_sec = 5
-  timeout_sec        = 2
+  name                = "reddit-app-hc"
+  request_path        = "/"
+  port                = 9292
+  check_interval_sec  = 5
+  timeout_sec         = 2
   healthy_threshold   = 2
   unhealthy_threshold = 5
 }
