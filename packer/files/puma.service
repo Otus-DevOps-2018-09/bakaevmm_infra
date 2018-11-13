@@ -1,0 +1,12 @@
+[Unit]
+Description=Puma Server
+After=mongod.service
+Required=mongod.service
+
+[Service]
+WorkingDirectory=/app-otus/reddit
+ExecStart=/usr/local/bin/pumactl start
+ExecStop=/usr/local/bin/pumactl stop
+
+[Install]
+WantedBy=multi-user.target
