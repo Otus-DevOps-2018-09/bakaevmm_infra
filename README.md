@@ -130,7 +130,19 @@ packer validate -var-file=variables.json  immutable.json
 * Разделили окружения на stage + prod
 * научились использовать модули
 
-## Задания с **
+### Задания с **
 
 * Использовали модуль storage-bucket для хранения state файлов в удалённом хзранилище
 * Проверили работу блокировок(важно для командной работы)
+
+## Homework #8
+
+* Командой ansible app -m command -a 'rm -rf ~/reddit' удаляем git repo
+* Плейбуком clone.yml закачиваем репозиторий
+
+### Задания с *
+
+* Добавлен файл inventory.json
+* Проверена работоспособность json inventory
+
+ 
