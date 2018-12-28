@@ -145,4 +145,15 @@ packer validate -var-file=variables.json  immutable.json
 * Добавлен файл inventory.json
 * Проверена работоспособность json inventory
 
- 
+## Homework #9
+
+* Написаны ansible playbook для шаблонов пакера.
+* Пересобраны шаблоны образов с использованием ansible.
+* Созданы плейбуки для настройки приложения и базы данных
+* Плейбуки разделены на несколько файлов и объединены одним плейбуком с использованием import_playbook
+
+### Задания с *
+
+* Для получения dynamic inventory используется плагин gcp_compute
+
+
