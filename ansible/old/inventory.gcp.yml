@@ -4,7 +4,7 @@ projects:
   - infra-219509
 scopes:
   - https://www.googleapis.com/auth/compute
-service_account_file: my_project_key.json
+service_account_file: ../../my_project_key.json
 filters:
 auth_kind: serviceaccount
 keyed_groups:

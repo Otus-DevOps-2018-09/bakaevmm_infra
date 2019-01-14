@@ -156,4 +156,15 @@ packer validate -var-file=variables.json  immutable.json
 
 * Для получения dynamic inventory используется плагин gcp_compute
 
+## Homework #10
 
+* Созданы роли для настройки инфраструктуры.
+* Старые плейбуки пернесены в отдельную директорию.
+* Научились работать с ansible-galaxy.
+* Роли разделены на stage и prod.
+* Для шифрования файлов с "секретами" использованы ansible vault.
+
+### Задание с *
+
+* Настроено использование dynamic inventory.
+* Настройка travis не выполнена.
