@@ -6,3 +6,4 @@ packer/variables.json
 .terraform/
 *.retry
 ansible/my_project_key.json
+jdauphant.nginx
