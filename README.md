@@ -1,3 +1,5 @@
+https://travis-ci.com/Otus-DevOps-2018-09/bakaevmm_infra.svg?branch=master
+
 # bakaevmm_infra
 bakaevmm Infra repository
 ## Homework #3
