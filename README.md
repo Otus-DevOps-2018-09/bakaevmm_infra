@@ -180,4 +180,4 @@ packer validate -var-file=variables.json  immutable.json
 
 * Роль DB вынесена в отдельный репозиторий.
 * Добавлен label со статусом билда.
-* Настройка travis для repo DB не выполнена
+* Настройка travis для repo DB не выполнена.
