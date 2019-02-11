@@ -168,3 +168,13 @@ packer validate -var-file=variables.json  immutable.json
 
 * Настроено использование dynamic inventory.
 * Настройка travis не выполнена.
+
+## Homework #11
+
+* Установлены Vagrant, Virtual Box, Molecule. 
+* Научился использовать Vagarnt + Molecule для локального тестирования ролей.
+
+### Задание с *
+
+* Роль DB вынесена в отдельный репозиторий.
+* Настройка travis не выполнена.
