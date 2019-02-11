@@ -1,4 +1,4 @@
-https://travis-ci.com/Otus-DevOps-2018-09/bakaevmm_infra.svg?branch=master
+[![Build Status](https://travis-ci.com/Otus-DevOps-2018-09/bakaevmm_infra.svg?branch=master)](https://travis-ci.com/Otus-DevOps-2018-09/bakaevmm_infra)
 
 # bakaevmm_infra
 bakaevmm Infra repository
