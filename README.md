@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.com/Otus-DevOps-2018-09/bakaevmm_infra.svg?branch=master)](https://travis-ci.com/Otus-DevOps-2018-09/bakaevmm_infra)
+
 # bakaevmm_infra
 bakaevmm Infra repository
 ## Homework #3
@@ -168,3 +170,14 @@ packer validate -var-file=variables.json  immutable.json
 
 * Настроено использование dynamic inventory.
 * Настройка travis не выполнена.
+
+## Homework #11
+
+* Установлены Vagrant, Virtual Box, Molecule. 
+* Научился использовать Vagarnt + Molecule для локального тестирования ролей.
+
+### Задание с *
+
+* Роль DB вынесена в отдельный репозиторий.
+* Добавлен label со статусом билда.
+* Настройка travis для repo DB не выполнена.
